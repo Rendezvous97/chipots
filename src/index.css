@@ -141,9 +141,7 @@ h2 {
 }
 
 button.primary,
-.join button,
-.enable-sensors,
-.override button {
+.join button {
   background: #f4d35e;
   color: #1b1408;
   border: 0;
@@ -209,54 +207,6 @@ button.ghost {
   display: block;
   width: 100%;
   height: 100%;
-}
-
-.hud {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  pointer-events: auto;
-  z-index: 3;
-}
-
-.qr-block {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  background: rgba(10, 8, 6, 0.72);
-  padding: 8px;
-  border-radius: 14px;
-}
-
-.room-code {
-  font-size: 22px;
-  letter-spacing: 0.2em;
-  font-weight: 700;
-}
-
-.hud-copy {
-  background: rgba(10, 8, 6, 0.55);
-  padding: 8px 12px;
-  border-radius: 12px;
-  font-size: 13px;
-}
-
-.hud-copy .inv {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin: 4px 0 2px;
-  font-weight: 700;
-}
-
-.hud-copy .inv span {
-  background: rgba(244, 211, 94, 0.18);
-  padding: 2px 7px;
-  border-radius: 999px;
-  font-size: 12px;
 }
 
 .state-card {
@@ -611,85 +561,6 @@ button.ghost {
   padding: 6px 12px;
 }
 
-.steer {
-  position: absolute;
-  z-index: 2;
-  background: transparent;
-  border: 0;
-  padding: 0;
-}
-
-.steer.left,
-.steer.right {
-  top: 20%;
-  width: 22%;
-  height: 60%;
-}
-
-.steer.left {
-  left: 0;
-}
-
-.steer.right {
-  right: 0;
-}
-
-.steer.up,
-.steer.down {
-  left: 22%;
-  width: 56%;
-  height: 18%;
-}
-
-.steer.up {
-  top: 0;
-}
-
-.steer.down {
-  bottom: 0;
-}
-
-.enable-sensors,
-.relocate,
-.toast {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 4;
-}
-
-.enable-sensors {
-  bottom: 18px;
-}
-
-.relocate {
-  bottom: 18px;
-  background: rgba(244, 211, 94, 0.92);
-  color: #1b1408;
-  border: 0;
-  border-radius: 999px;
-  padding: 10px 16px;
-  font-weight: 700;
-}
-
-.enable-sensors {
-  bottom: 62px;
-}
-
-.override button.guess {
-  outline: 2px solid #fff;
-}
-
-.toast {
-  bottom: 70px;
-  background: rgba(10, 8, 6, 0.8);
-  padding: 8px 12px;
-  border-radius: 10px;
-  font-size: 13px;
-  width: min(420px, calc(100% - 24px));
-  text-align: center;
-}
-
 .lifted-overlay {
   position: absolute;
   inset: 0;
@@ -699,28 +570,6 @@ button.ghost {
   text-align: center;
   z-index: 3;
   padding: 24px;
-}
-
-.override {
-  position: absolute;
-  bottom: 16px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  justify-content: center;
-  z-index: 5;
-  width: min(640px, calc(100% - 20px));
-  align-items: center;
-}
-
-.override span {
-  width: 100%;
-  text-align: center;
-  font-size: 12px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
 }
 
 html.is-board,

@@ -3,7 +3,7 @@ import type { Inventory, RoomState, TradeOffer } from '../types'
 import { GameCanvas } from '../game/canvas'
 import { backgroundLabel, generateCell } from '../game/cellGen.mjs'
 import { ART, RESOURCE_LABEL } from '../game/art'
-import { collectResource, offerTrade, respondTrade, sayHello } from '../firebase'
+import { collectResource, offerTrade, respondTrade, sayHello } from '../room'
 
 type Props = {
   code: string

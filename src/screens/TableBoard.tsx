@@ -42,7 +42,7 @@ export function TableBoard({ code, room }: Props) {
     <div className="board">
       <header className="board-head">
         <div>
-          <p className="eyebrow">Laptop debug board</p>
+          <p className="eyebrow">Spectator board</p>
           <h1>Room {code}</h1>
           <p className="muted">
             This tab is a spectator. It does not sit on the grid. +Y is toward the

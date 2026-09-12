@@ -7,7 +7,7 @@ import {
   makeRoomCode,
   subscribeRoom,
   watchRoom,
-} from './firebase'
+} from './room'
 import type { RoomState } from './types'
 import { Lobby } from './screens/Lobby'
 import { Play } from './screens/Play'
@@ -91,13 +91,6 @@ export default function App() {
     }
   }
 
-  const onJoin = () => {
-    setError(null)
-    if (joinCode.length < 4) return
-    setWatch(false)
-    setCode(joinCode)
-  }
-
   if (watch && code && room) {
     return <TableBoard code={code} room={room} />
   }
@@ -113,7 +106,6 @@ export default function App() {
       joinCode={joinCode}
       onJoinCode={setJoinCode}
       onCreate={() => void onCreate()}
-      onJoin={onJoin}
       onWatch={() => {
         setError(null)
         if (joinCode.length < 4) return

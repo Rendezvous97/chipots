@@ -73,14 +73,6 @@ final class RoomSocket: ObservableObject {
     send(payload)
   }
 
-  func setAxis(originId: String, rightId: String) {
-    send(["type": "uwb-axis", "originId": originId, "rightId": rightId])
-  }
-
-  func calibrateGx() {
-    send(["type": "uwb-calibrate", "kind": "gx"])
-  }
-
   func sendStatus(_ status: String, carryX: Double = 0, carryY: Double = 0) {
     var payload: [String: Any] = ["type": "status", "status": status]
     if status == "table" {
@@ -88,10 +80,6 @@ final class RoomSocket: ObservableObject {
       payload["carryY"] = carryY
     }
     send(payload)
-  }
-
-  func nudge(dx: Int, dy: Int) {
-    send(["type": "nudge", "dx": dx, "dy": dy])
   }
 
   private func send(_ object: [String: Any]) {

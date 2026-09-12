@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { fetchJoinOrigin } from './firebase'
+import { fetchJoinOrigin } from './room'
 
 export function useJoinOrigin() {
   const [origin, setOrigin] = useState(

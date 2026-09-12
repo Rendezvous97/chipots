@@ -7,7 +7,6 @@ type Props = {
   joinCode: string
   onJoinCode: (value: string) => void
   onCreate: () => void
-  onJoin: () => void
   onWatch: () => void
 }
 
@@ -19,7 +18,6 @@ export function Lobby({
   joinCode,
   onJoinCode,
   onCreate,
-  onJoin,
   onWatch,
 }: Props) {
   const origin = useJoinOrigin()
@@ -38,12 +36,13 @@ export function Lobby({
         <p className="eyebrow">HackCMU</p>
         <h1>Tabletop</h1>
         <p className="lede splash-lede">
-          Phones are windows on one meadow. Gather sheep, wheat, clay, and stone.
-          First to hold all four wins.
+          This laptop is a spectator. Players join from the NearbyTable iOS app
+          on the same Wi‑Fi. Gather sheep, wheat, clay, and stone — first to hold
+          all four wins.
         </p>
 
         <div className="banner warn splash-url">
-          Phones join at <code>{origin || '…'}</code>
+          Phones talk to <code>{origin || '…'}</code>
         </div>
 
         {error && <div className="banner error">{error}</div>}
@@ -52,13 +51,13 @@ export function Lobby({
           {joining ? 'Opening the table…' : 'Create a room'}
         </button>
 
-        <div className="or">sit down with a code</div>
+        <div className="or">watch an existing table</div>
 
         <form
           className="join"
           onSubmit={(event) => {
             event.preventDefault()
-            onJoin()
+            onWatch()
           }}
         >
           <input
@@ -72,17 +71,9 @@ export function Lobby({
             onChange={(event) => onJoinCode(event.target.value.toUpperCase())}
           />
           <button type="submit" disabled={joining || joinCode.length < 4}>
-            Join
+            Watch
           </button>
         </form>
-        <button
-          type="button"
-          className="ghost"
-          onClick={onWatch}
-          disabled={joining || joinCode.length < 4}
-        >
-          Watch this table
-        </button>
       </div>
     </div>
   )

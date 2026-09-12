@@ -66,7 +66,7 @@ export type RoomState = {
   winnerId?: string | null
   devices: Record<string, DeviceState>
   explored: Record<string, boolean>
-  token: TokenState
+  token?: TokenState
   uwb?: UwbPublic
 }
 

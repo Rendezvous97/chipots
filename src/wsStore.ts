@@ -1,13 +1,9 @@
-import type { DeviceState, Inventory, RoomState, TokenState } from './types'
+import type { Inventory, RoomState } from './types'
 
 type Listener = (room: RoomState | null) => void
 type Outgoing =
   | { type: 'join'; code: string; deviceId: string; createIfMissing?: boolean; native?: boolean }
   | { type: 'watch'; code: string; createIfMissing?: boolean }
-  | { type: 'status'; status: DeviceState['status'] }
-  | { type: 'move'; worldX: number; worldY: number }
-  | { type: 'attach'; dx: number; dy: number }
-  | { type: 'token'; token: TokenState }
   | { type: 'collect'; key: string; cellX: number; cellY: number }
   | { type: 'hello'; name: string }
   | { type: 'trade-offer'; toId: string; offer: Inventory; ask: Inventory }
@@ -204,31 +200,6 @@ export async function wsWatchRoom(code: string): Promise<void> {
   })
   send({ type: 'watch', code })
   await ready
-}
-
-export async function wsSetDeviceStatus(
-  _code: string,
-  _deviceId: string,
-  status: DeviceState['status'],
-): Promise<void> {
-  send({ type: 'status', status })
-}
-
-export async function wsMoveDevice(
-  _code: string,
-  _deviceId: string,
-  worldX: number,
-  worldY: number,
-): Promise<void> {
-  send({ type: 'move', worldX, worldY })
-}
-
-export async function wsAttachNeighbor(dx: number, dy: number): Promise<void> {
-  send({ type: 'attach', dx, dy })
-}
-
-export async function wsWriteToken(_code: string, token: TokenState): Promise<void> {
-  send({ type: 'token', token })
 }
 
 export function wsCollect(key: string, cellX: number, cellY: number) {
