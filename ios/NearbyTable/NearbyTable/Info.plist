@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Find the game laptop on the same Wi-Fi.</string>
+	<key>NSNearbyInteractionUsageDescription</key>
+	<string>Measure how far the other phone is so the shared map can snap to the table.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera assistance lets Ultra Wideband see which side the other phone is on, not just how far.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Detect when this phone is picked up or set down on the table.</string>
+	<key>UILaunchScreen</key>
+	<dict/>
+</dict>
+</plist>

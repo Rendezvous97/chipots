@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1B00000000000000000001 /* NearbyTableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B00000000000000000010 /* NearbyTableApp.swift */; };
+		A1B00000000000000000002 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B00000000000000000011 /* RootView.swift */; };
+		A1B00000000000000000003 /* RoomSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B00000000000000000012 /* RoomSocket.swift */; };
+		A1B00000000000000000004 /* NearbyRanging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B00000000000000000013 /* NearbyRanging.swift */; };
+		A1B00000000000000000005 /* NearbyInteraction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B00000000000000000014 /* NearbyInteraction.framework */; };
+		A1B00000000000000000006 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B00000000000000000015 /* WebKit.framework */; };
+		A1B00000000000000000007 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1B00000000000000000017 /* ARKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1B00000000000000000010 /* NearbyTableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyTableApp.swift; sourceTree = "<group>"; };
+		A1B00000000000000000011 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A1B00000000000000000012 /* RoomSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomSocket.swift; sourceTree = "<group>"; };
+		A1B00000000000000000013 /* NearbyRanging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyRanging.swift; sourceTree = "<group>"; };
+		A1B00000000000000000014 /* NearbyInteraction.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NearbyInteraction.framework; path = System/Library/Frameworks/NearbyInteraction.framework; sourceTree = SDKROOT; };
+		A1B00000000000000000015 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A1B00000000000000000017 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		A1B00000000000000000016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1B00000000000000000020 /* NearbyTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearbyTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1B00000000000000000030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B00000000000000000005 /* NearbyInteraction.framework in Frameworks */,
+				A1B00000000000000000006 /* WebKit.framework in Frameworks */,
+				A1B00000000000000000007 /* ARKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1B00000000000000000040 = {
+			isa = PBXGroup;
+			children = (
+				A1B00000000000000000041 /* NearbyTable */,
+				A1B00000000000000000042 /* Frameworks */,
+				A1B00000000000000000043 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1B00000000000000000041 /* NearbyTable */ = {
+			isa = PBXGroup;
+			children = (
+				A1B00000000000000000010 /* NearbyTableApp.swift */,
+				A1B00000000000000000011 /* RootView.swift */,
+				A1B00000000000000000012 /* RoomSocket.swift */,
+				A1B00000000000000000013 /* NearbyRanging.swift */,
+				A1B00000000000000000016 /* Info.plist */,
+			);
+			path = NearbyTable;
+			sourceTree = "<group>";
+		};
+		A1B00000000000000000042 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1B00000000000000000014 /* NearbyInteraction.framework */,
+				A1B00000000000000000015 /* WebKit.framework */,
+				A1B00000000000000000017 /* ARKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1B00000000000000000043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1B00000000000000000020 /* NearbyTable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1B00000000000000000050 /* NearbyTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1B00000000000000000070 /* Build configuration list for PBXNativeTarget "NearbyTable" */;
+			buildPhases = (
+				A1B00000000000000000051 /* Sources */,
+				A1B00000000000000000030 /* Frameworks */,
+				A1B00000000000000000052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NearbyTable;
+			productName = NearbyTable;
+			productReference = A1B00000000000000000020 /* NearbyTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1B00000000000000000060 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A1B00000000000000000050 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = A1B00000000000000000071 /* Build configuration list for PBXProject "NearbyTable" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1B00000000000000000040;
+			productRefGroup = A1B00000000000000000043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1B00000000000000000050 /* NearbyTable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1B00000000000000000052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1B00000000000000000051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B00000000000000000001 /* NearbyTableApp.swift in Sources */,
+				A1B00000000000000000002 /* RootView.swift in Sources */,
+				A1B00000000000000000003 /* RoomSocket.swift in Sources */,
+				A1B00000000000000000004 /* NearbyRanging.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1B00000000000000000080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1B00000000000000000081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1B00000000000000000082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PH7S58AR6M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NearbyTable/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tabletop;
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "Measure how far the other phone is so the shared map can snap to the table.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera assistance lets Ultra Wideband see which side the other phone is on, not just how far.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Detect when this phone is picked up or set down on the table.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Find the game laptop on the same Wi-Fi.";
+				INFOPLIST_KEY_LSRequiresIPhoneOS = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackcmu.NearbyTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A1B00000000000000000083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PH7S58AR6M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NearbyTable/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tabletop;
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "Measure how far the other phone is so the shared map can snap to the table.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera assistance lets Ultra Wideband see which side the other phone is on, not just how far.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Detect when this phone is picked up or set down on the table.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Find the game laptop on the same Wi-Fi.";
+				INFOPLIST_KEY_LSRequiresIPhoneOS = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackcmu.NearbyTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1B00000000000000000070 /* Build configuration list for PBXNativeTarget "NearbyTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B00000000000000000082 /* Debug */,
+				A1B00000000000000000083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1B00000000000000000071 /* Build configuration list for PBXProject "NearbyTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1B00000000000000000080 /* Debug */,
+				A1B00000000000000000081 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1B00000000000000000060 /* Project object */;
+}
